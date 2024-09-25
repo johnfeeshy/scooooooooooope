@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  position: fixed;
+  background-color: blue;
+    overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay::before {
+  content: '';
+    top: 0;
+    left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  background: radial-gradient(circle, rgba(238,174,202,0) 20%, rgba(132, 191, 4, 1) 37%, rgba(255,0,0,1) 40%, rgba(255,100,0,1) 75%);
+}
